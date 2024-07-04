@@ -10,7 +10,6 @@ jobs:
     runs-on: ubuntu-latest
 
     permissions:
-      id-token: write
       contents: write
 
     steps:
@@ -20,5 +19,5 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN_999 }}
-          publish_dir: ./  # Répertoire contenant les fichiers HTML
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./
