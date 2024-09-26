@@ -7,6 +7,22 @@ body {
     background-color: #ffe6f2; /* Soft pastel pink background */
 }
 
+.image {
+    width: 200px; /* Ajuste la taille selon tes besoins */
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Ombre légère avec flou */
+    transition: all 0.3s ease; /* Transition fluide sur les changements */
+    margin: 0 auto; /* Centre l'image horizontalement */
+    display: flex;
+    justify-content: center; /* Centre horizontalement */
+}
+
+.image:hover {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Ombre plus forte au survol */
+    transform: scale(1.05); /* Léger zoom au survol */
+}
+
+
 /* Container Styling */
 .container {
     background-color: white;
