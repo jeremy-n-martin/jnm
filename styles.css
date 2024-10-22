@@ -155,6 +155,38 @@ main {
     font-size: 12px;
 }
 
+/* Styles pour le nuage de tags */
+.tag-cloud {
+    margin-top: 50px; /* Ajustez la valeur selon vos préférences */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+.tag-cloud-tag {
+    padding: 5px 10px;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.tag-cloud-tag.selected-tag {
+    border: 2px solid #000;
+}
+
+/* Mise à jour des styles des tags dans les cartes de faits */
+.tag {
+    background-color: #ffb6c1;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
 
 /* ======================================== */
 /* ============== MEDIA QUERIES =========== */

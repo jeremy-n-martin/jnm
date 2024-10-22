@@ -13,6 +13,7 @@
                 <ul>
                     <li><a href="index.html" class="tooltip" data-tooltip="Home">🏠</a></li>
                     <li><a href="curiosities.html" class="tooltip" data-tooltip="Curiosities">🦄</a></li>
+                    <li><a href="latin.html" class="tooltip" data-tooltip="Latin Expressions">🌐</a></li>
                 </ul>
             </nav>
         </header>
@@ -30,6 +31,162 @@
 
 
         const facts = [
+            {
+            id: "platypus-glows-under-uv-light",
+            title: "Platypus Fur Glows Under UV Light",
+            body: "The fur of the platypus fluoresces under ultraviolet light, emitting a blue-green glow. Scientists discovered this in 2020, but the reason for this trait remains unknown.",
+            tags: ["Animals", "Biology"]
+            },
+            {
+                id: "vikings-used-human-urine-for-iron-forging",
+                title: "Vikings Used Human Urine for Iron Forging",
+                body: "Vikings collected human urine and combined it with bog iron and peat to create a form of iron known as 'sponge iron.' The ammonia in urine helped remove impurities.",
+                tags: ["Vikings", "Technology"]
+            },
+            {
+                id: "mayan-rubber-balls",
+                title: "The Mayans Invented Rubber Balls",
+                body: "The ancient Mayans were the first to create rubber balls over 3,000 years ago. They used the latex from rubber trees and mixed it with morning glory vines to make them bounce.",
+                tags: ["Ancient Civilizations", "Inventions"]
+            },
+            {
+                id: "the-roman-concrete-secret",
+                title: "The Secret of Roman Concrete",
+                body: "Roman concrete, known for its durability, used volcanic ash that allowed it to self-heal and grow stronger over time when exposed to seawater.",
+                tags: ["Roman Empire", "Engineering"]
+            },
+            {
+                id: "trees-can-communicate",
+                title: "Trees Communicate Through a 'Wood Wide Web'",
+                body: "Trees share nutrients and communicate through underground networks of fungi, known as mycorrhizal networks, often helping weaker trees survive.",
+                tags: ["Biology", "Ecology"]
+            },
+            {
+                id: "island-of-immortal-jellyfish",
+                title: "The Immortal Jellyfish",
+                body: "Turritopsis dohrnii, known as the immortal jellyfish, can revert its cells to an earlier state, allowing it to theoretically live forever if it avoids disease or predators.",
+                tags: ["Marine Biology", "Evolution"]
+            },
+            {
+                id: "the-great-pacific-garbage-patch-has-organisms-living-on-it",
+                title: "Organisms Thrive on the Great Pacific Garbage Patch",
+                body: "The massive floating garbage patch has become a habitat for marine organisms like barnacles and crabs, which have adapted to the plastic debris.",
+                tags: ["Environment", "Marine Biology"]
+            },
+            {
+                id: "the-oldest-toothbrush-was-made-of-bones",
+                title: "The Oldest Toothbrush Was Made of Bones",
+                body: "Early toothbrushes from ancient China, dating back to the Tang Dynasty (618–907 AD), were made using animal bones and hog bristles.",
+                tags: ["Hygiene", "Ancient Civilizations"]
+            },
+            {
+                id: "cannibalistic-chimps",
+                title: "Some Chimps Practice Cannibalism",
+                body: "In some chimpanzee communities, males have been observed killing and eating the offspring of rivals as a way to eliminate competition and gain dominance.",
+                tags: ["Animals", "Behavior"]
+            },
+            {
+                id: "longest-human-pregnancy",
+                title: "The Longest Recorded Human Pregnancy",
+                body: "The longest human pregnancy on record lasted 375 days. In 1945, a woman named Beulah Hunter from Los Angeles carried her baby for over a year, far exceeding the average 280 days.",
+                tags: ["Medicine", "Human Body"]
+            },
+            {
+                id: "sea-sponges-are-immortal",
+                title: "Sea Sponges Can Be Immortal",
+                body: "Sea sponges, some of the oldest organisms on Earth, can potentially live indefinitely as they continuously regenerate cells. Some are over 11,000 years old.",
+                tags: ["Marine Biology", "Longevity"]
+            },
+            {
+                id: "einstein-was-a-patent-clerk",
+                title: "Einstein Was a Patent Clerk",
+                body: "Before becoming one of the most renowned scientists, Albert Einstein worked as a patent examiner in Switzerland, where he developed his theory of relativity during his free time.",
+                tags: ["Famous Figures", "Careers"]
+            },
+            {
+                id: "rain-of-fish-honduras",
+                title: "It Rains Fish in Honduras",
+                body: "In the town of Yoro, Honduras, a phenomenon known as 'Lluvia de Peces' occurs yearly where fish fall from the sky during heavy storms, believed to be swept up by waterspouts.",
+                tags: ["Meteorology", "Phenomena"]
+            },
+            {
+                id: "camels-have-three-eyelids",
+                title: "Camels Have Three Eyelids",
+                body: "To protect their eyes from desert sand, camels have three eyelids, including one translucent lid that acts like a windshield wiper.",
+                tags: ["Animals", "Anatomy"]
+            },
+            {
+                id: "the-coelacanth-was-thought-to-be-extinct",
+                title: "The Coelacanth Was Thought Extinct for 66 Million Years",
+                body: "The coelacanth, a fish thought to have gone extinct with the dinosaurs, was rediscovered alive in 1938 off the coast of South Africa.",
+                tags: ["Paleontology", "Marine Biology"]
+            },
+            {
+                id: "the-sound-of-snow",
+                title: "Snow Absorbs Sound",
+                body: "Fresh snow has the ability to absorb sound, making the environment quieter after a snowfall. The snowflakes' intricate structures trap sound waves, creating a muffled silence.",
+                tags: ["Meteorology", "Physics"]
+            },
+            {
+                id: "sneezes-exceed-100mph",
+                title: "Sneezes Exceed 100 mph",
+                body: "A sneeze can travel up to 100 miles per hour, expelling thousands of droplets that can reach distances of up to 6 feet, highlighting the importance of covering your mouth.",
+                tags: ["Biology", "Human Body"]
+            },
+            {
+                id: "earth-wobbles-on-its-axis",
+                title: "Earth Wobbles on Its Axis",
+                body: "Earth's axis wobbles slightly in a movement called 'precession,' taking about 26,000 years to complete a full wobble. This causes the position of the North Star to change over millennia.",
+                tags: ["Astronomy", "Earth"]
+            },
+            {
+                id: "crocodiles-cant-stick-out-their-tongue",
+                title: "Crocodiles Can’t Stick Out Their Tongue",
+                body: "A crocodile’s tongue is held in place by a membrane that prevents it from moving, making it impossible for them to stick it out.",
+                tags: ["Animals", "Anatomy"]
+            },
+            {
+                id: "zebras-dont-get-bitten-by-flies",
+                title: "Zebras’ Stripes Deter Flies",
+                body: "Scientists believe that zebras’ black-and-white stripes confuse flies, making it difficult for them to land and bite, thus protecting them from diseases.",
+                tags: ["Animals", "Adaptations"]
+            },
+            {
+                id: "australian-lake-pink",
+                title: "Australia Has a Pink Lake",
+                body: "Lake Hillier in Australia is naturally pink due to the presence of algae that produce a red pigment. Despite its unusual color, the lake’s water is harmless and safe to swim in.",
+                tags: ["Geography", "Natural Wonders"]
+            },
+            {
+                id: "the-puzzle-of-patagonian-teeth",
+                title: "The Puzzle of Patagonian Teeth",
+                body: "In 1980, archaeologists found ancient human teeth in Patagonia with mysterious carvings. The carvings are thought to represent early forms of cultural or religious expression.",
+                tags: ["Archaeology", "Mystery"]
+            },
+            {
+                id: "most-ancient-people-were-shorter",
+                title: "Most Ancient People Were Much Shorter",
+                body: "The average height of people in ancient civilizations was significantly shorter, often around 5 feet (1.5 meters) due to nutrition and lifestyle factors.",
+                tags: ["Anthropology", "History"]
+            },
+            {
+                id: "chinese-terracotta-warriors-were-once-painted",
+                title: "Terracotta Warriors Were Painted in Bright Colors",
+                body: "The famous Terracotta Army of China was originally painted in vivid colors, but most of the pigment has faded or flaked off after excavation.",
+                tags: ["Ancient Civilizations", "Art"]
+            },
+            {
+                id: "lightning-hits-earth-100-times-per-second",
+                title: "Lightning Strikes Earth 100 Times Every Second",
+                body: "At any given moment, lightning strikes the Earth about 100 times per second, resulting in nearly 8.6 million strikes per day.",
+                tags: ["Meteorology", "Phenomena"]
+            },
+            {
+                id: "elephant-graves-may-be-a-myth",
+                title: "Elephant Graveyards May Be a Myth",
+                body: "The idea that elephants have specific graveyards where they go to die is likely a myth. However, elephants do show a deep respect for the bones of their dead.",
+                tags: ["Animals", "Mythology"]
+            },
             {
                 id: "antibiotics-in-ancient-egypt",
                 title: "Antibiotics in Ancient Egypt",
@@ -299,7 +456,680 @@
                 title: "Wombat Poop is Cube-Shaped",
                 body: "Wombats, native to Australia, produce cube-shaped poop to mark their territory.",
                 tags: ["Miscellaneous", "Animals"]
-            }
+            },
+            {
+                "id": "vikings-used-crystal-sun-compasses",
+                "title": "Vikings Used Crystal Sun Compasses",
+                "body": "Vikings navigated the seas using 'sunstones,' crystals that could determine the sun's position even on cloudy days, centuries before the invention of magnetic compasses.",
+                "tags": ["Vikings", "Navigation"]
+            },
+            {
+                "id": "ancient-romans-created-hypocausts",
+                "title": "Ancient Romans Created Hypocausts",
+                "body": "The Romans invented an early form of central heating called the hypocaust, using heated floors and walls in their bathhouses and villas.",
+                "tags": ["Roman Empire", "Engineering"]
+            },
+            {
+                "id": "elephants-can-recognize-themselves-in-a-mirror",
+                "title": "Elephants Can Recognize Themselves in a Mirror",
+                "body": "Elephants are one of the few animals capable of recognizing their own reflection, a sign of self-awareness shared only by apes, dolphins, and magpies.",
+                "tags": ["Animals", "Cognition"]
+            },
+            {
+                "id": "the-first-heart-transplant-was-in-1967",
+                "title": "The First Heart Transplant Was in 1967",
+                "body": "Dr. Christiaan Barnard performed the first human heart transplant in South Africa in 1967. The patient survived 18 days, marking a groundbreaking moment in medical history.",
+                "tags": ["Medicine", "History"]
+            },
+            {
+                "id": "ancient-egyptian-women-could-divorce",
+                "title": "Ancient Egyptian Women Could Divorce",
+                "body": "Women in ancient Egypt had legal rights similar to men, including the ability to divorce, own property, and engage in business.",
+                "tags": ["Ancient Egypt", "Gender Rights"]
+            },
+            {
+                "id": "octopuses-have-three-hearts",
+                "title": "Octopuses Have Three Hearts",
+                "body": "Octopuses have three hearts: two pump blood through the gills, while the third pumps it to the rest of the body. When they swim, the main heart stops beating, which is why they prefer crawling.",
+                "tags": ["Marine Biology", "Anatomy"]
+            },
+            {
+                "id": "japanese-samurai-wore-makeup",
+                "title": "Japanese Samurai Wore Makeup",
+                "body": "Samurai warriors applied makeup before going into battle, such as painting their faces white and adding red and black markings to appear more intimidating.",
+                "tags": ["Feudal Japan", "Culture"]
+            },
+            {
+                "id": "penguins-propose-with-pebbles",
+                "title": "Penguins Propose with Pebbles",
+                "body": "Male penguins give pebbles to their chosen mates as a sign of affection and to help build nests together, similar to a marriage proposal.",
+                "tags": ["Animals", "Behavior"]
+            },
+            {
+                "id": "medieval-cities-were-larger-than-we-thought",
+                "title": "Medieval Cities Were Larger Than We Thought",
+                "body": "Recent archaeological research shows that some medieval cities were significantly larger than previously estimated, rivaling the size of modern cities.",
+                "tags": ["Middle Ages", "Archaeology"]
+            },
+            {
+                "id": "ancient-babylon-had-wifi-equivalent",
+                "title": "Ancient Babylon Had 'Wi-Fi Equivalent'",
+                "body": "The Babylonians used a network of signal fires placed on high towers to quickly transmit messages across long distances, an early form of wireless communication.",
+                "tags": ["Ancient Babylon", "Technology"]
+            },
+            {
+                "id": "honey-never-spoils",
+                "title": "Honey Never Spoils",
+                "body": "Honey is the only food known to have an eternal shelf life. Archaeologists have found pots of honey in ancient Egyptian tombs that are still edible after thousands of years.",
+                "tags": ["Food", "Ancient Egypt"]
+            },
+            {
+                "id": "mona-lisa-has-no-eyebrows",
+                "title": "Mona Lisa Has No Eyebrows",
+                "body": "Leonardo da Vinci’s famous painting, the Mona Lisa, lacks eyebrows. It is believed that they were either intentionally left out or lost over time due to cleaning or restoration efforts.",
+                "tags": ["Art", "Renaissance"]
+            },
+            {
+                "id": "rome-invented-fast-food",
+                "title": "Rome Invented Fast Food",
+                "body": "Ancient Romans had 'thermopolia,' street food stands where citizens could buy hot meals quickly, much like modern fast-food outlets.",
+                "tags": ["Roman Empire", "Food"]
+            },
+            {
+                "id": "the-oldest-animal-on-earth",
+                "title": "The Oldest Animal on Earth",
+                "body": "A clam named Ming, found off the coast of Iceland, was estimated to be over 500 years old, making it the oldest known living animal before it was accidentally killed during research.",
+                "tags": ["Animals", "Longevity"]
+            },
+            {
+                "id": "medieval-punishments-were-unusually-inventive",
+                "title": "Medieval Punishments Were Unusually Inventive",
+                "body": "Medieval Europe had bizarre punishment methods like the 'ducking stool' for gossipers or 'scold’s bridles' for nagging wives, showing their creativity in maintaining public order.",
+                "tags": ["Middle Ages", "Justice"]
+            },
+            {
+                "id": "the-first-dictionary-in-ancient-sumer",
+                "title": "The First Dictionary in Ancient Sumer",
+                "body": "The Sumerians, who lived over 4,000 years ago in Mesopotamia, created the first known dictionary, organizing words in cuneiform script.",
+                "tags": ["Ancient Civilizations", "Language"]
+            },
+            {
+                "id": "turtles-breathe-through-their-butt",
+                "title": "Turtles Breathe Through Their Butt",
+                "body": "Certain species of turtles can absorb oxygen through their cloaca, allowing them to stay underwater for extended periods.",
+                "tags": ["Animals", "Anatomy"]
+            },
+            {
+                "id": "the-pirates-code-existed",
+                "title": "The Pirates' Code Existed",
+                "body": "Pirates in the Golden Age followed a strict set of rules called the 'Pirate Code,' governing everything from loot division to behavior aboard the ship.",
+                "tags": ["Pirates", "Maritime History"]
+            },
+            {
+                "id": "giraffes-have-the-same-number-of-neck-bones-as-humans",
+                "title": "Giraffes Have the Same Number of Neck Bones as Humans",
+                "body": "Despite their long necks, giraffes have only seven cervical vertebrae, the same number as humans.",
+                "tags": ["Animals", "Anatomy"]
+            },
+            {
+                "id": "napoleon-was-attacked-by-bunnies",
+                "title": "Napoleon Was Attacked by Bunnies",
+                "body": "Napoleon Bonaparte was once attacked by hundreds of rabbits during a hunting trip after his staff accidentally released them all at once.",
+                "tags": ["Napoleon", "Unusual Events"]
+            },
+            {
+                "id": "the-leaning-tower-of-pisa-leaned-from-the-start",
+                "title": "The Leaning Tower of Pisa Leaned from the Start",
+                "body": "The Leaning Tower of Pisa began leaning during its construction in the 12th century due to unstable ground, and engineers have been trying to stabilize it ever since.",
+                "tags": ["Architecture", "Italy"]
+            },
+            {
+                "id": "rabbits-cant-vomit",
+                "title": "Rabbits Can’t Vomit",
+                "body": "Rabbits lack the ability to vomit due to a highly effective sphincter at the base of their stomach, making them prone to digestive issues if they eat the wrong foods.",
+                "tags": ["Animals", "Physiology"]
+            },
+            {
+                "id": "the-earliest-toothbrush-was-made-of-twigs",
+                "title": "The Earliest Toothbrush Was Made of Twigs",
+                "body": "Ancient civilizations like the Egyptians and Babylonians used 'chew sticks' from twigs with frayed ends as early toothbrushes to clean their teeth.",
+                "tags": ["Hygiene", "Ancient Civilizations"]
+            },
+            {
+                id: "bananas-are-berries",
+                title: "Bananas Are Berries, but Strawberries Are Not",
+                body: "Botanically, bananas are classified as berries, while strawberries are not because they develop from a single ovary.",
+                tags: ["Botany", "Fruits"]
+            },
+            {
+                id: "earth-has-temporary-mini-moons",
+                title: "Earth Has Temporary Mini-Moons",
+                body: "Earth occasionally captures near-Earth asteroids in its orbit, acting as temporary mini-moons for months or years.",
+                tags: ["Astronomy", "Earth"]
+            },
+            {
+                id: "there-is-a-diamond-planet",
+                title: "There Is a Diamond Planet",
+                body: "An exoplanet named 55 Cancri e is believed to be composed largely of carbon and may be one-third pure diamond.",
+                tags: ["Astronomy", "Exoplanets"]
+            },
+            {
+                id: "kangaroos-cant-walk-backwards",
+                title: "Kangaroos Can't Walk Backwards",
+                body: "Due to their muscular tail and large feet, kangaroos are unable to walk backwards.",
+                tags: ["Animals", "Australia"]
+            },
+            {
+                id: "sahara-was-once-a-rainforest",
+                title: "The Sahara Was Once a Rainforest",
+                body: "Around 6,000 years ago, the Sahara Desert was a lush rainforest due to different climate patterns.",
+                tags: ["Geography", "Climate"]
+            },
+            {
+                id: "timbuktu-had-massive-libraries",
+                title: "Timbuktu Had Massive Libraries",
+                body: "In the 15th and 16th centuries, Timbuktu was home to one of the world's largest universities and libraries.",
+                tags: ["History", "Education"]
+            },
+            {
+                id: "sea-otters-hold-hands",
+                title: "Sea Otters Hold Hands While Sleeping",
+                body: "Sea otters hold each other's paws while sleeping to prevent drifting apart in ocean currents.",
+                tags: ["Animals", "Behavior"]
+            },
+            {
+                id: "bees-navigate-using-the-sun",
+                title: "Bees Navigate Using the Sun",
+                body: "Honey bees use the position of the sun as a compass to navigate and communicate food sources.",
+                tags: ["Animals", "Navigation"]
+            },
+            {
+                id: "underwater-waterfall-exists",
+                title: "An Underwater Waterfall Exists",
+                body: "The Denmark Strait Cataract is an underwater waterfall with water falling nearly 3,500 meters beneath the ocean's surface.",
+                tags: ["Geography", "Oceanography"]
+            },
+            {
+                id: "sloths-poop-once-a-week",
+                title: "Sloths Poop Only Once a Week",
+                body: "Sloths descend from trees to defecate just once a week, making them vulnerable to predators.",
+                tags: ["Animals", "Behavior"]
+            },
+            {
+                id: "thundersnow-phenomenon",
+                title: "Thundersnow Is a Real Phenomenon",
+                body: "Under specific conditions, snowfall can produce thunder and lightning, known as thundersnow.",
+                tags: ["Meteorology", "Phenomena"]
+            },
+            {
+                id: "platypus-is-venomous",
+                title: "The Platypus Is Venomous",
+                body: "Male platypuses have spurs on their hind feet that can deliver venom causing severe pain to humans.",
+                tags: ["Animals", "Australia"]
+            },
+            {
+                id: "moon-is-moving-away",
+                title: "The Moon Is Moving Away from Earth",
+                body: "The Moon drifts about 3.8 centimeters away from Earth each year due to tidal interactions.",
+                tags: ["Astronomy", "Earth"]
+            },
+            {
+                id: "largest-organism-is-fungus",
+                title: "The Largest Organism Is a Fungus",
+                body: "A honey fungus in Oregon spans 2,385 acres and is considered the largest organism on Earth.",
+                tags: ["Biology", "Ecology"]
+            },
+            {
+                id: "birds-are-dinosaurs",
+                title: "Birds Are Modern-Day Dinosaurs",
+                body: "Birds are direct descendants of theropod dinosaurs and are classified as avian dinosaurs.",
+                tags: ["Paleontology", "Evolution"]
+            },
+            {
+                id: "polar-bear-fur-is-transparent",
+                title: "Polar Bear Fur Is Transparent",
+                body: "Polar bear fur is actually transparent and hollow, appearing white due to light reflection.",
+                tags: ["Animals", "Biology"]
+            },
+            {
+                id: "venus-spins-backwards",
+                title: "Venus Spins Backwards",
+                body: "Venus rotates in the opposite direction to most planets, a phenomenon known as retrograde rotation.",
+                tags: ["Astronomy", "Planets"]
+            },
+            {
+                id: "kangaroo-tail-fifth-leg",
+                title: "Kangaroos Use Their Tails as a Fifth Leg",
+                body: "Kangaroos use their strong tails to propel themselves forward when moving slowly.",
+                tags: ["Animals", "Locomotion"]
+            },
+            {
+                id: "eiffel-tower-grows-in-summer",
+                title: "The Eiffel Tower Grows in Summer",
+                body: "Due to thermal expansion, the Eiffel Tower can grow up to 15 centimeters on hot days.",
+                tags: ["Physics", "Architecture"]
+            },
+            {
+                id: "butterflies-taste-with-feet",
+                title: "Butterflies Taste with Their Feet",
+                body: "Butterflies have taste receptors on their feet to help locate suitable plants for laying eggs.",
+                tags: ["Animals", "Biology"]
+            },
+            {
+                id: "antarctica-is-desert",
+                title: "Antarctica Is the World's Largest Desert",
+                body: "Despite its ice, Antarctica is classified as a desert due to minimal precipitation.",
+                tags: ["Geography", "Climate"]
+            },
+            {
+                id: "sun-massive-solar-system",
+                title: "The Sun Makes Up 99.86% of the Solar System's Mass",
+                body: "The Sun contains the vast majority of the solar system's mass, dwarfing all planets and objects.",
+                tags: ["Astronomy", "Solar System"]
+            },
+            {
+                id: "apple-is-25-percent-air",
+                title: "An Apple Is 25% Air",
+                body: "Apples float because they are composed of about 25% air, making them buoyant.",
+                tags: ["Food", "Science"]
+            },
+            {
+                id: "horses-sleep-standing-up",
+                title: "Horses Can Sleep Standing Up",
+                body: "Horses have a stay apparatus in their legs that allows them to sleep without falling.",
+                tags: ["Animals", "Behavior"]
+            },
+            {
+                id: "phoenicians-created-alphabet",
+                title: "The Phoenicians Created the First Alphabet",
+                body: "Around 1050 BCE, the Phoenician alphabet became the basis for most modern alphabets.",
+                tags: ["History", "Language"]
+            },
+            {
+                id: "black-holes-evaporate",
+                title: "Black Holes Evaporate Over Time",
+                body: "Through Hawking radiation, black holes lose mass and can eventually evaporate completely.",
+                tags: ["Astronomy", "Physics"]
+            },
+            {
+                id: "some-metals-explode-in-water",
+                title: "Some Metals Explode on Contact with Water",
+                body: "Alkali metals like sodium react violently with water, producing heat and hydrogen gas.",
+                tags: ["Chemistry", "Science"]
+            },
+            {
+                id: "humans-glow-in-dark",
+                title: "Humans Glow in the Dark",
+                body: "Humans emit a small amount of bioluminescence, too weak for the human eye to detect.",
+                tags: ["Biology", "Human Body"]
+            },
+            {
+                id: "more-trees-than-stars",
+                title: "More Trees Than Stars in the Milky Way",
+                body: "Earth has over 3 trillion trees, surpassing the number of stars in our galaxy.",
+                tags: ["Astronomy", "Ecology"]
+            },
+            {
+                id: "rats-laugh-when-tickled",
+                title: "Rats Laugh When Tickled",
+                body: "Rats emit ultrasonic chirps associated with laughter when tickled by humans.",
+                tags: ["Animals", "Behavior"]
+            },
+            {
+                id: "water-triple-point",
+                title: "Water Can Boil and Freeze at the Same Time",
+                body: "At the triple point, water exists simultaneously in solid, liquid, and gas phases.",
+                tags: ["Physics", "Science"]
+            },
+            {
+                id: "cows-have-best-friends",
+                title: "Cows Have Best Friends",
+                body: "Cows form close bonds with certain herd members and become stressed when separated.",
+                tags: ["Animals", "Behavior"]
+            },
+            {
+                id: "space-smells-like-steak",
+                title: "Space Smells Like Seared Steak",
+                body: "Astronauts describe space as having a distinct smell resembling hot metal or seared meat.",
+                tags: ["Space", "Astronauts"]
+            },
+            {
+                id: "venus-hottest-planet",
+                title: "Venus Is Hotter Than Mercury",
+                body: "Venus's thick atmosphere traps heat, making it the hottest planet despite its distance from the Sun.",
+                tags: ["Astronomy", "Planets"]
+            },
+            {
+                id: "queue-silent-letters",
+                title: "The Word 'Queue' Has Silent Letters",
+                body: "In 'queue,' the last four letters are silent, pronounced the same as the letter 'Q.'",
+                tags: ["Language", "English"]
+            },
+            {
+                id: "dolphins-use-names",
+                title: "Dolphins Use Names for Each Other",
+                body: "Dolphins have unique whistles to identify and call out to specific individuals.",
+                tags: ["Animals", "Communication"]
+            },
+            {
+                id: "longest-burning-lightbulb",
+                title: "The Longest-Burning Lightbulb",
+                body: "The Centennial Light in California has been burning almost continuously since 1901.",
+                tags: ["Technology", "History"]
+            },
+            {
+                id: "glass-rain-exoplanet",
+                title: "A Planet Where It Rains Glass",
+                body: "Exoplanet HD 189733b experiences glass rain in 7,000 km/h winds due to its atmosphere.",
+                tags: ["Astronomy", "Exoplanets"]
+            },
+            {
+                id: "day-longer-than-year-on-venus",
+                title: "A Day on Venus Is Longer Than a Year",
+                body: "Venus takes 243 Earth days to rotate once but only 225 Earth days to orbit the Sun.",
+                tags: ["Astronomy", "Planets"]
+            },
+            {
+                id: "hummingbirds-fly-backwards",
+                title: "Hummingbirds Can Fly Backwards",
+                body: "They are the only birds capable of flying in all directions due to unique wing joints.",
+                tags: ["Animals", "Birds"]
+            },
+            {
+                id: "letter-e-most-common",
+                title: "The Letter 'E' Is Most Common in English",
+                body: "'E' is the most frequently used letter, appearing in about 11% of English words.",
+                tags: ["Language", "English"]
+            },
+            {
+                id: "lungfish-survive-out-of-water",
+                title: "Lungfish Can Live Out of Water for Years",
+                body: "African lungfish can estivate in mud cocoons for up to four years during droughts.",
+                tags: ["Animals", "Adaptation"]
+            },
+            {
+                id: "earthquakes-shorten-day",
+                title: "Earthquakes Can Shorten the Day",
+                body: "Massive earthquakes can shift Earth's mass, slightly increasing its rotation speed.",
+                tags: ["Geology", "Earth"]
+            },
+            {
+                id: "chess-possibilities-atoms",
+                title: "More Chess Games Than Atoms in the Universe",
+                body: "Possible unique chess games are estimated at 10^120, exceeding the universe's atoms.",
+                tags: ["Mathematics", "Chess"]
+            },
+            {
+                id: "blue-whale-heart-size",
+                title: "A Blue Whale's Heart Is Car-Sized",
+                body: "The heart of a blue whale can weigh around 600 kilograms, akin to a small car.",
+                tags: ["Animals", "Anatomy"]
+            },
+            {
+                id: "humans-only-animals-blush",
+                title: "Humans Are the Only Animals That Blush",
+                body: "Blushing is a unique human response linked to emotional stimuli and social interactions.",
+                tags: ["Biology", "Human Behavior"]
+            },
+            {
+                id: "octopus-has-three-hearts",
+                title: "An Octopus Has Three Hearts",
+                body: "Octopuses have three hearts: two pump blood to the gills, one circulates it to the body.",
+                tags: ["Animals", "Anatomy"]
+            },
+            {
+                id: "pineapple-is-not-an-apple",
+                title: "A Pineapple Is Not an Apple",
+                body: "Pineapples are a group of berries fused together, not related to apples.",
+                tags: ["Botany", "Fruits"]
+            },
+            {
+                id: "gorillas-can-catch-human-colds",
+                title: "Gorillas Can Catch Human Colds",
+                body: "Gorillas are susceptible to human illnesses like the common cold due to genetic similarities.",
+                tags: ["Animals", "Health"]
+            },
+            {
+                id: "blood-type-affects-mosquito-bites",
+                title: "Blood Type Affects Mosquito Attraction",
+                body: "People with Type O blood are more likely to be bitten by mosquitoes.",
+                tags: ["Health", "Insects"]
+            },
+            {
+                id: "shakespeare-invented-names",
+                title: "Shakespeare Invented Names",
+                body: "Names like Jessica and Miranda first appeared in Shakespeare's plays.",
+                tags: ["Literature", "Language"]
+            },
+            {
+                id: "honey-is-eternal",
+                title: "Honey Never Spoils",
+                body: "Honey's chemical composition allows it to last indefinitely if sealed properly.",
+                tags: ["Food", "Chemistry"]
+            },
+            {
+                id: "france-still-executed-by-guillotine-in-1977",
+                title: "France Used the Guillotine Until 1977",
+                body: "The last execution by guillotine in France occurred in 1977.",
+                tags: ["History", "France"]
+            },
+            {
+                id: "tomato-is-a-fruit",
+                title: "Tomatoes Are Fruits",
+                body: "Botanically, tomatoes are fruits because they develop from a flower and contain seeds.",
+                tags: ["Botany", "Food"]
+            },
+            {
+                id: "pigeons-can-recognize-words",
+                title: "Pigeons Can Recognize Words",
+                body: "Studies show pigeons can distinguish between real words and non-words.",
+                tags: ["Animals", "Cognition"]
+            },
+            {
+                id: "armadillos-give-birth-to-identical-quadruplets",
+                title: "Armadillos Give Birth to Identical Quadruplets",
+                body: "Nine-banded armadillos always have litters of four genetically identical young.",
+                tags: ["Animals", "Reproduction"]
+            },
+            {
+                id: "bananas-are-radioactive",
+                title: "Bananas Are Radioactive",
+                body: "Bananas contain potassium-40, making them slightly radioactive but harmless.",
+                tags: ["Food", "Science"]
+            },
+            {
+                id: "cheetahs-cant-roar",
+                title: "Cheetahs Can't Roar",
+                body: "Unlike other big cats, cheetahs can purr but cannot roar due to vocal cord structure.",
+                tags: ["Animals", "Behavior"]
+            },
+            {
+                id: "mosquitoes-attracted-to-carbon-dioxide",
+                title: "Mosquitoes Are Attracted to Carbon Dioxide",
+                body: "They use carbon dioxide emissions to locate their hosts from a distance.",
+                tags: ["Insects", "Science"]
+            },
+            {
+                id: "koalas-have-fingerprints",
+                title: "Koalas Have Fingerprints",
+                body: "Koala fingerprints are so similar to humans' that they can taint crime scenes.",
+                tags: ["Animals", "Anatomy"]
+            },
+            {
+                id: "water-makes-different-sounds-hot-and-cold",
+                title: "Hot and Cold Water Sound Different",
+                body: "Hot water produces a higher-pitched sound when poured due to energy and viscosity differences.",
+                tags: ["Physics", "Everyday Science"]
+            },
+            {
+                id: "your-stomach-lining-replaces-every-3-days",
+                title: "Your Stomach Lining Replaces Every 3 Days",
+                body: "The stomach's mucosal lining regenerates frequently to protect against acid.",
+                tags: ["Biology", "Human Body"]
+            },
+            {
+                id: "space-is-completely-silent",
+                title: "Space Is Completely Silent",
+                body: "Sound waves need a medium to travel, and space is a vacuum devoid of air.",
+                tags: ["Space", "Physics"]
+            },
+            {
+                id: "the-great-barrier-reef-has-its-own-mailbox",
+                title: "The Great Barrier Reef Has Its Own Mailbox",
+                body: "Visitors can send postcards from a mailbox located on the reef.",
+                tags: ["Geography", "Australia"]
+            },
+            {
+                id: "worms-eat-their-own-weight-each-day",
+                title: "Worms Eat Their Own Weight Daily",
+                body: "Earthworms consume soil equivalent to their body weight every day.",
+                tags: ["Animals", "Ecology"]
+            },
+            {
+                id: "snakes-can-sense-earthquakes",
+                title: "Snakes Can Sense Earthquakes",
+                body: "They can detect seismic vibrations from earthquakes up to 120 kilometers away.",
+                tags: ["Animals", "Geology"]
+            },
+            {
+                id: "mosquitoes-are-deadliest-animals",
+                title: "Mosquitoes Are the Deadliest Animals",
+                body: "They cause millions of deaths each year by transmitting diseases like malaria.",
+                tags: ["Health", "Insects"]
+            },
+            {
+                id: "pearls-dissolve-in-vinegar",
+                title: "Pearls Dissolve in Vinegar",
+                body: "Acetic acid in vinegar can slowly dissolve a pearl over time.",
+                tags: ["Chemistry", "Minerals"]
+            },
+            {
+                id: "jellyfish-have-existed-longer-than-dinosaurs",
+                title: "Jellyfish Have Existed Longer Than Dinosaurs",
+                body: "They have been around for over 500 million years, predating dinosaurs.",
+                tags: ["Animals", "Paleontology"]
+            },
+            {
+                id: "the-mary-celeste-mystery",
+                title: "The Mary Celeste Mystery",
+                body: "In 1872, the ship Mary Celeste was found adrift in the Atlantic Ocean with no crew aboard, and no sign of struggle or distress, leading to one of the greatest maritime mysteries.",
+                tags: ["Unusual Historical Events", "Maritime History"]
+            },
+            {
+                id: "tardigrades-can-survive-in-space",
+                title: "Tardigrades Can Survive in Space",
+                body: "Tardigrades, also known as water bears, can survive extreme conditions including the vacuum of space, extreme temperatures, and radiation.",
+                tags: ["Animals", "Biology"]
+            },
+            {
+                id: "sea-cucumbers-eject-internal-organs",
+                title: "Sea Cucumbers Eject Their Internal Organs",
+                body: "When threatened, sea cucumbers can eject their internal organs to entangle predators, later regenerating the lost organs.",
+                tags: ["Animals", "Defense Mechanisms"]
+            },
+            {
+                id: "saturn-could-float-in-water",
+                title: "Saturn Could Float in Water",
+                body: "Saturn is the least dense planet in our solar system; its average density is less than that of water, meaning it would float if placed in a sufficiently large body of water.",
+                tags: ["Astronomy", "Planets"]
+            },
+            {
+                id: "the-empire-state-building-has-its-own-zip-code",
+                title: "The Empire State Building Has Its Own ZIP Code",
+                body: "The Empire State Building is large enough to have its own ZIP code: 10118.",
+                tags: ["United States", "Buildings"]
+            },
+            {
+                id: "cats-cant-taste-sweet",
+                title: "Cats Can't Taste Sweetness",
+                body: "Due to a genetic deficiency in their taste receptors, cats are unable to taste sweet flavors.",
+                tags: ["Animals", "Biology"]
+            },
+            {
+                id: "bananas-grow-upside-down",
+                title: "Bananas Grow Upside Down",
+                body: "Bananas grow upward against gravity, resulting in their curved shape, a phenomenon known as negative geotropism.",
+                tags: ["Botany", "Fruits"]
+            },
+            {
+                id: "the-loudest-sound-ever",
+                title: "The Loudest Sound Ever Recorded",
+                body: "The 1883 eruption of Krakatoa produced the loudest sound in recorded history, heard up to 3,000 miles away.",
+                tags: ["Volcanoes", "History"]
+            },
+            {
+                id: "monotremes-lay-eggs",
+                title: "Monotremes Are Egg-Laying Mammals",
+                body: "Monotremes, a small group of mammals including the platypus and echidnas, lay eggs instead of giving birth to live young.",
+                tags: ["Animals", "Biology"]
+            },
+            {
+                id: "tomato-ketchup-was-sold-as-medicine",
+                title: "Tomato Ketchup Was Once Sold as Medicine",
+                body: "In the 1830s, tomato ketchup was marketed as a medicine claiming to cure ailments like indigestion and jaundice.",
+                tags: ["Food", "History"]
+            },
+            {
+                id: "the-10000-year-clock",
+                title: "The 10,000-Year Clock",
+                body: "A clock designed to run for 10,000 years is being built inside a mountain in Texas, intended to encourage long-term thinking.",
+                tags: ["Technology", "Engineering"]
+            },
+            {
+                id: "the-sahara-expands",
+                title: "The Sahara Desert Is Expanding",
+                body: "The Sahara Desert has expanded by about 10% since 1920 due to climate change and natural climate cycles.",
+                tags: ["Geography", "Climate Change"]
+            },
+            {
+                id: "an-octopus-has-nine-brains",
+                title: "An Octopus Has Nine Brains",
+                body: "An octopus has a central brain and eight mini-brains in each of its arms, allowing independent control of each limb.",
+                tags: ["Animals", "Anatomy"]
+            },
+            {
+                id: "the-worlds-oldest-company",
+                title: "The World's Oldest Company",
+                body: "Kongo Gumi, a Japanese construction company established in 578 AD, is one of the world's oldest continuously operating companies.",
+                tags: ["Business", "History"]
+            },
+            {
+                id: "whale-songs-have-dialects",
+                title: "Whale Songs Have Regional Dialects",
+                body: "Humpback whales sing complex songs that vary by region, showing evidence of cultural transmission among whale populations.",
+                tags: ["Animals", "Communication"]
+            },
+            {
+                id: "dolphins-sleep-with-one-eye-open",
+                title: "Dolphins Sleep with One Eye Open",
+                body: "Dolphins sleep with one half of their brain at a time, keeping one eye open to stay alert for predators.",
+                tags: ["Animals", "Behavior"]
+            },
+            {
+                id: "russia-is-bigger-than-pluto",
+                title: "Russia Is Bigger Than Pluto",
+                body: "The surface area of Russia is about 17 million square kilometers, while Pluto's surface area is about 16.6 million square kilometers.",
+                tags: ["Geography", "Astronomy"]
+            },
+            {
+                id: "penguins-have-knees",
+                title: "Penguins Have Knees",
+                body: "Although not visible due to their plumage and body shape, penguins have knees inside their bodies.",
+                tags: ["Animals", "Anatomy"]
+            },
+            {
+                id: "the-first-computer-programmer",
+                title: "The First Computer Programmer Was Ada Lovelace",
+                body: "In the 1840s, Ada Lovelace wrote the first algorithm intended for a computing machine, making her the world's first computer programmer.",
+                tags: ["Technology", "History"]
+            },
+            {
+                id: "the-moon-has-moonquakes",
+                title: "The Moon Has Moonquakes",
+                body: "Moonquakes, similar to earthquakes, occur on the Moon due to tidal stresses from Earth's gravitational pull.",
+                tags: ["Astronomy", "Seismology"]
+            },
+        
         ];
 
 
@@ -316,67 +1146,144 @@
 
 
 
-
-
-
-
-
-
-
-        // Fonction pour créer les encarts de faits
-        document.addEventListener("DOMContentLoaded", () => {
-            const factsContainer = document.querySelector(".facts-section");
-
-            facts.forEach(fact => {
-                // Créer l'élément article
-                const article = document.createElement("article");
-                article.className = "fact-card";
-                article.id = fact.id;
-
-                // Créer la div pour le contenu
-                const factContent = document.createElement("div");
-                factContent.className = "fact-content";
-
-                // Créer le titre
-                const title = document.createElement("h4");
-                title.className = "fact-title";
-                title.textContent = fact.title;
-
-                // Créer le paragraphe pour le corps du fait
-                const body = document.createElement("p");
-                body.className = "fact-body";
-                body.textContent = fact.body;
-
-                // Ajouter le titre et le corps au contenu
-                factContent.appendChild(title);
-                factContent.appendChild(body);
-
-                // Créer la div pour le pied de page
-                const factFooter = document.createElement("div");
-                factFooter.className = "fact-footer";
-
-                // Créer la div pour les tags
-                const tagsContainer = document.createElement("div");
-                tagsContainer.className = "tags";
-
-                fact.tags.forEach(tagText => {
-                    const tag = document.createElement("span");
-                    tag.className = "tag";
-                    tag.textContent = tagText;
-                    tagsContainer.appendChild(tag);
-                });
-
-                // Ajouter les tags au pied de page
-                factFooter.appendChild(tagsContainer);
-
-                // Ajouter les éléments au container principal de l'article
-                article.appendChild(factContent);
-                article.appendChild(factFooter);
-
-                // Ajouter l'article au conteneur principal
-                factsContainer.appendChild(article);
+        // Collecte des tags uniques
+        const allTags = [];
+        facts.forEach(fact => {
+            fact.tags.forEach(tag => {
+                if (!allTags.includes(tag)) {
+                    allTags.push(tag);
+                }
             });
         });
+
+        // Attribution des couleurs aux tags
+        const tagColors = [
+            "#FF5733", "#33FF57", "#3357FF", "#FF33A6", "#FFC300", "#8E44AD",
+            "#3498DB", "#1ABC9C", "#E67E22", "#2ECC71", "#E74C3C", "#9B59B6",
+            "#F1C40F", "#34495E", "#D35400", "#16A085", "#C0392B", "#27AE60",
+            "#2980B9", "#95A5A6"
+        ];
+
+        const tagColorMap = {};
+        allTags.forEach((tag, index) => {
+            tagColorMap[tag] = tagColors[index % tagColors.length];
+        });
+
+        document.addEventListener("DOMContentLoaded", () => {
+            const mainContainer = document.querySelector("main");
+
+            // Création du nuage de tags
+            const tagCloudContainer = document.createElement("section");
+            tagCloudContainer.className = "tag-cloud";
+
+            // Bouton pour afficher tous les faits
+            const showAllTag = document.createElement("span");
+            showAllTag.className = "tag-cloud-tag";
+            showAllTag.textContent = "Show All";
+            showAllTag.style.backgroundColor = "#ccc";
+            showAllTag.addEventListener("click", () => {
+                displayFacts(facts);
+                highlightSelectedTag(null);
+            });
+            tagCloudContainer.appendChild(showAllTag);
+
+            // Ajout des tags au nuage de tags
+            allTags.forEach(tag => {
+                const tagElement = document.createElement("span");
+                tagElement.className = "tag-cloud-tag";
+                tagElement.textContent = tag;
+                tagElement.style.backgroundColor = tagColorMap[tag];
+
+                // Événement au clic sur un tag
+                tagElement.addEventListener("click", () => {
+                    filterFactsByTag(tag);
+                    highlightSelectedTag(tag);
+                });
+
+                tagCloudContainer.appendChild(tagElement);
+            });
+
+            // Ajout du nuage de tags au conteneur principal
+            mainContainer.appendChild(tagCloudContainer);
+
+            const factsContainer = document.querySelector(".facts-section");
+
+            // Fonction pour afficher les faits
+            function displayFacts(factsToDisplay) {
+                factsContainer.innerHTML = ''; // Efface les faits précédents
+
+                factsToDisplay.forEach(fact => {
+                    // Création de la carte du fait
+                    const article = document.createElement("article");
+                    article.className = "fact-card";
+                    article.id = fact.id;
+
+                    const factContent = document.createElement("div");
+                    factContent.className = "fact-content";
+
+                    const title = document.createElement("h4");
+                    title.className = "fact-title";
+                    title.textContent = fact.title;
+
+                    const body = document.createElement("p");
+                    body.className = "fact-body";
+                    body.textContent = fact.body;
+
+                    factContent.appendChild(title);
+                    factContent.appendChild(body);
+
+                    const factFooter = document.createElement("div");
+                    factFooter.className = "fact-footer";
+
+                    const tagsContainer = document.createElement("div");
+                    tagsContainer.className = "tags";
+
+                    fact.tags.forEach(tagText => {
+                        const tag = document.createElement("span");
+                        tag.className = "tag";
+                        tag.textContent = tagText;
+                        tag.style.backgroundColor = tagColorMap[tagText];
+
+                        // Événement au clic sur un tag dans la carte
+                        tag.addEventListener("click", () => {
+                            filterFactsByTag(tagText);
+                            highlightSelectedTag(tagText);
+                        });
+
+                        tagsContainer.appendChild(tag);
+                    });
+
+                    factFooter.appendChild(tagsContainer);
+
+                    article.appendChild(factContent);
+                    article.appendChild(factFooter);
+
+                    factsContainer.appendChild(article);
+                });
+            }
+
+            // Fonction pour filtrer les faits par tag
+            function filterFactsByTag(tag) {
+                const filteredFacts = facts.filter(fact => fact.tags.includes(tag));
+                displayFacts(filteredFacts);
+            }
+
+            // Fonction pour mettre en évidence le tag sélectionné
+            function highlightSelectedTag(selectedTag) {
+                const tagElements = document.querySelectorAll(".tag-cloud-tag");
+                tagElements.forEach(tagElement => {
+                    if (tagElement.textContent === selectedTag) {
+                        tagElement.classList.add("selected-tag");
+                    } else {
+                        tagElement.classList.remove("selected-tag");
+                    }
+                });
+            }
+
+            // Afficher tous les faits au chargement
+            displayFacts(facts);
+        });
+
     </script>
 </body>
 </html>
