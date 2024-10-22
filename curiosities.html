@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curiosities And Incredible Facts</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="containermain">
+        <header>
+            <nav class="fixed-nav">
+                <ul>
+                    <li><a href="index.html" class="tooltip" data-tooltip="Home">🏠</a></li>
+                    <li><a href="curiosities.html" class="tooltip" data-tooltip="Curiosities">🦄</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="facts-section">
+                <!-- Les faits seront ajoutés ici par JavaScript -->
+            </section>
+        </main>
+    </div>
+
+    <script>
+        // Tableau des faits
+
+
+
+
+        const facts = [
+            {
+                id: "antibiotics-in-ancient-egypt",
+                title: "Antibiotics in Ancient Egypt",
+                body: "The ancient Egyptians used moldy bread to treat infections, a practice that actually involved traces of penicillin.",
+                tags: ["Ancient Egypt", "Medicine"]
+            },
+            {
+                id: "cleopatra-and-time",
+                title: "Cleopatra and Time",
+                body: "Cleopatra lived closer in time to the invention of the iPhone than to the construction of the Great Pyramid of Giza.",
+                tags: ["Ancient Egypt", "Timeline"]
+            },
+            {
+                id: "pyramid-workers-were-paid-in-beer",
+                title: "Pyramid Workers Were Paid in Beer",
+                body: "The builders of the Great Pyramid were paid in bread and beer, not slaves as commonly believed.",
+                tags: ["Ancient Egypt", "Economy"]
+            },
+            {
+                id: "egyptians-loved-board-games",
+                title: "Egyptians Loved Board Games",
+                body: "The Egyptians enjoyed playing a game called Senet, an early precursor to modern board games.",
+                tags: ["Ancient Egypt", "Culture"]
+            },
+            {
+                id: "king-tuts-tomb-was-discovered-by-accident",
+                title: "King Tut’s Tomb Was Discovered by Accident",
+                body: "Howard Carter found King Tut’s tomb in 1922 after stumbling upon it while searching for another tomb.",
+                tags: ["Ancient Egypt", "Archaeology"]
+            },
+            {
+                id: "roman-public-toilets",
+                title: "Roman Public Toilets",
+                body: "The Romans used shared sponges on sticks as cleaning tools in their sophisticated public toilets.",
+                tags: ["Roman Empire", "Hygiene"]
+            },
+            {
+                id: "a-horse-in-the-senate",
+                title: "A Horse in the Senate",
+                body: "Emperor Caligula appointed his favorite horse, Incitatus, as a senator to mock the Roman political system.",
+                tags: ["Roman Empire", "Politics"]
+            },
+            {
+                id: "rome-had-no-police-force",
+                title: "Rome Had No Police Force",
+                body: "Despite its size, ancient Rome had no formal police force; public order was maintained by citizens and soldiers.",
+                tags: ["Roman Empire", "Law Enforcement"]
+            },
+            {
+                id: "roman-concrete-was-stronger-than-modern-concrete",
+                title: "Roman Concrete Was Stronger than Modern Concrete",
+                body: "Roman concrete structures have lasted over 2,000 years, thanks to the volcanic ash in their mixture.",
+                tags: ["Roman Empire", "Engineering"]
+            },
+            {
+                id: "gladiators-rarely-fought-to-the-death",
+                title: "Gladiators Rarely Fought to the Death",
+                body: "Contrary to Hollywood depictions, most gladiators didn’t fight to the death, as they were valuable investments for their owners.",
+                tags: ["Roman Empire", "Entertainment"]
+            },
+            {
+                id: "pigeon-heroism-in-wwii",
+                title: "Pigeon Heroism in WWII",
+                body: "A pigeon named Cher Ami saved 194 soldiers' lives by delivering a critical message while severely injured during World War I.",
+                tags: ["World War", "Animals"]
+            },
+            {
+                id: "the-first-bomb-on-berlin",
+                title: "The First Bomb on Berlin",
+                body: "The first bomb dropped on Berlin during WWII killed an elephant in the Berlin Zoo.",
+                tags: ["World War", "History"]
+            },
+            {
+                id: "hitlers-niece-was-his-alleged-lover",
+                title: "Hitler’s Niece Was His Alleged Lover",
+                body: "Geli Raubal, Hitler’s niece, was rumored to have had a close and troubling relationship with him before her mysterious death.",
+                tags: ["World War", "Personalities"]
+            },
+            {
+                id: "us-soldiers-were-paid-in-war-rations",
+                title: "US Soldiers Were Paid in War Rations",
+                body: "During WWII, some American soldiers received war rations as part of their salary, including chocolate bars.",
+                tags: ["World War", "Military"]
+            },
+            {
+                id: "the-swiss-army-prepared-to-blow-up-the-alps",
+                title: "The Swiss Army Prepared to Blow Up the Alps",
+                body: "During WWII, Switzerland had a plan to blow up its Alpine tunnels to defend against a possible Nazi invasion.",
+                tags: ["World War", "Military Strategy"]
+            },
+            {
+                id: "a-japanese-pilot-survived-pearl-harbor-and-the-atomic-bomb",
+                title: "A Japanese Pilot Survived Pearl Harbor and the Atomic Bomb",
+                body: "Tsutomu Yamaguchi was present at both Pearl Harbor and Hiroshima, surviving both attacks.",
+                tags: ["World War", "Survivors"]
+            },
+            {
+                id: "the-black-death-created-a-labor-shortage",
+                title: "The Black Death Created a Labor Shortage",
+                body: "The Black Death killed so many people in Europe that labor became scarce, leading to better wages for survivors.",
+                tags: ["Middle Ages", "Economy"]
+            },
+            {
+                id: "knights-were-wealthy-landowners",
+                title: "Knights Were Wealthy Landowners",
+                body: "Contrary to popular belief, knights were typically wealthy landowners who fought to protect their estates, not wandering adventurers.",
+                tags: ["Middle Ages", "Society"]
+            },
+            {
+                id: "the-dark-ages-had-bright-innovations",
+                title: "The 'Dark Ages' Had Bright Innovations",
+                body: "While known as a time of decline, the Middle Ages saw significant innovations, such as the mechanical clock and eyeglasses.",
+                tags: ["Middle Ages", "Innovation"]
+            },
+            {
+                id: "the-first-universities-were-founded",
+                title: "The First Universities Were Founded",
+                body: "The world's first universities, like those in Bologna and Oxford, were founded in the Middle Ages to promote learning.",
+                tags: ["Middle Ages", "Education"]
+            },
+            {
+                id: "viking-women-had-more-rights-than-european-women",
+                title: "Viking Women Had More Rights than European Women",
+                body: "Viking women could own property, divorce their husbands, and even rule kingdoms.",
+                tags: ["Middle Ages", "Vikings"]
+            },
+            {
+                id: "christopher-columbus-was-not-the-first-to-discover-america",
+                title: "Christopher Columbus Was Not the First to Discover America",
+                body: "The Norse explorer Leif Erikson reached North America 500 years before Columbus.",
+                tags: ["Explorers", "History"]
+            },
+            {
+                id: "magellan-didnt-circumnavigate-the-globe",
+                title: "Magellan Didn’t Circumnavigate the Globe",
+                body: "Ferdinand Magellan’s crew completed the first circumnavigation of the Earth, but Magellan himself died before finishing the journey.",
+                tags: ["Explorers", "Voyages"]
+            },
+            {
+                id: "marco-polo-may-have-never-reached-china",
+                title: "Marco Polo May Have Never Reached China",
+                body: "Some historians believe Marco Polo fabricated parts of his famous journey to China, as there’s no solid evidence he actually went there.",
+                tags: ["Explorers", "Controversies"]
+            },
+            {
+                id: "james-cook-was-killed-by-hawaiians",
+                title: "James Cook Was Killed by Hawaiians",
+                body: "The famous British explorer James Cook was killed by native Hawaiians during his third voyage in the Pacific.",
+                tags: ["Explorers", "History"]
+            },
+            {
+                id: "napoleons-height",
+                title: "Napoleon’s Height",
+                body: "Contrary to myth, Napoleon was 1.68 meters tall, which was average for men of his time.",
+                tags: ["Famous Figures", "Myths"]
+            },
+            {
+                id: "hitler-was-nominated-for-the-nobel-peace-prize",
+                title: "Hitler Was Nominated for the Nobel Peace Prize",
+                body: "In 1939, a Swedish politician sarcastically nominated Adolf Hitler for the Nobel Peace Prize, before quickly withdrawing the nomination.",
+                tags: ["Famous Figures", "Controversies"]
+            },
+            {
+                id: "einstein-was-offered-the-presidency-of-israel",
+                title: "Einstein Was Offered the Presidency of Israel",
+                body: "Albert Einstein, known for his contributions to physics, was offered the presidency of Israel in 1952, which he declined.",
+                tags: ["Famous Figures", "Politics"]
+            },
+            {
+                id: "shakespeare-invented-more-than-1700-words",
+                title: "Shakespeare Invented More Than 1,700 Words",
+                body: "William Shakespeare is credited with inventing over 1,700 words still used in the English language today.",
+                tags: ["Famous Figures", "Language"]
+            },
+            {
+                id: "leonardo-da-vinci-was-ambidextrous",
+                title: "Leonardo da Vinci Was Ambidextrous",
+                body: "The famous artist and inventor could write and paint with both hands, a rare and highly valuable skill.",
+                tags: ["Famous Figures", "Skills"]
+            },
+            {
+                id: "the-us-planned-to-bomb-the-moon",
+                title: "The US Planned to Bomb the Moon",
+                body: "During the Cold War, the US considered detonating a nuclear bomb on the Moon to demonstrate military superiority over the Soviet Union.",
+                tags: ["Technology", "Cold War"]
+            },
+            {
+                id: "the-great-wall-is-not-visible-from-space",
+                title: "The Great Wall is Not Visible from Space",
+                body: "Contrary to popular belief, the Great Wall of China cannot be seen from space with the naked eye.",
+                tags: ["Technology", "Myths"]
+            },
+            {
+                id: "the-first-computer-bug-was-an-actual-bug",
+                title: "The First Computer Bug Was an Actual Bug",
+                body: "The first recorded computer bug was a moth found in a computer in 1947, giving birth to the term 'bug.'",
+                tags: ["Technology", "History"]
+            },
+            {
+                id: "the-first-vending-machine-dispensed-holy-water",
+                title: "The First Vending Machine Dispensed Holy Water",
+                body: "The first known vending machine, created in ancient Egypt, dispensed holy water in temples.",
+                tags: ["Technology", "Ancient Egypt"]
+            },
+            {
+                id: "the-internet-was-originally-called-arpanet",
+                title: "The Internet Was Originally Called 'ARPANET'",
+                body: "The precursor to the internet, ARPANET, was developed by the US Department of Defense in the 1960s to connect research institutions.",
+                tags: ["Technology", "Internet"]
+            },
+            {
+                id: "the-shortest-war-in-history",
+                title: "The Shortest War in History",
+                body: "The Anglo-Zanzibar War of 1896 lasted only 38 minutes, making it the shortest war in recorded history.",
+                tags: ["Unusual Historical Events", "Wars"]
+            },
+            {
+                id: "the-longest-duel",
+                title: "The Longest Duel",
+                body: "A French duel between two officers, Dupont and Fournier, lasted 19 years and involved multiple confrontations over disagreements.",
+                tags: ["Unusual Historical Events", "Conflicts"]
+            },
+            {
+                id: "queen-elizabeth-i-never-took-a-bath",
+                title: "Queen Elizabeth I Never Took a Bath",
+                body: "It was said that Queen Elizabeth I took a bath only once a month, 'whether she needed it or not.'",
+                tags: ["Unusual Historical Events", "Royalty"]
+            },
+            {
+                id: "a-stray-dog-became-a-sergeant-in-wwi",
+                title: "A Stray Dog Became a Sergeant in WWI",
+                body: "A stray dog named Sergeant Stubby became the most decorated war dog of WWI, helping to save lives and raise morale.",
+                tags: ["Unusual Historical Events", "Animals"]
+            },
+            {
+                id: "a-chicken-lived-without-its-head-for-18-months",
+                title: "A Chicken Lived Without Its Head for 18 Months",
+                body: "In 1945, a chicken named Mike lived for 18 months after its head was chopped off, being fed with a dropper.",
+                tags: ["Unusual Historical Events", "Animals"]
+            },
+            {
+                id: "titanic-ignored-iceberg-warning",
+                title: "Titanic Ignored Iceberg Warning",
+                body: "The Titanic could have avoided disaster, but a crucial iceberg warning was ignored by the radio operator, who was busy sending passenger messages.",
+                tags: ["Miscellaneous", "Disasters"]
+            },
+            {
+                id: "antarctica-has-an-atm",
+                title: "Antarctica Has an ATM",
+                body: "There is a single ATM in Antarctica located at McMurdo Station for the researchers stationed there.",
+                tags: ["Miscellaneous", "Antarctica"]
+            },
+            {
+                id: "vatican-city-has-its-own-radio-station",
+                title: "Vatican City Has Its Own Radio Station",
+                body: "Vatican City operates its own radio station, broadcasting in over 40 languages worldwide.",
+                tags: ["Miscellaneous", "Vatican City"]
+            },
+            {
+                id: "sharks-are-older-than-trees",
+                title: "Sharks Are Older Than Trees",
+                body: "Sharks have existed for over 400 million years, while trees appeared about 350 million years ago.",
+                tags: ["Miscellaneous", "Biology"]
+            },
+            {
+                id: "wombat-poop-is-cube-shaped",
+                title: "Wombat Poop is Cube-Shaped",
+                body: "Wombats, native to Australia, produce cube-shaped poop to mark their territory.",
+                tags: ["Miscellaneous", "Animals"]
+            }
+        ];
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // Fonction pour créer les encarts de faits
+        document.addEventListener("DOMContentLoaded", () => {
+            const factsContainer = document.querySelector(".facts-section");
+
+            facts.forEach(fact => {
+                // Créer l'élément article
+                const article = document.createElement("article");
+                article.className = "fact-card";
+                article.id = fact.id;
+
+                // Créer la div pour le contenu
+                const factContent = document.createElement("div");
+                factContent.className = "fact-content";
+
+                // Créer le titre
+                const title = document.createElement("h4");
+                title.className = "fact-title";
+                title.textContent = fact.title;
+
+                // Créer le paragraphe pour le corps du fait
+                const body = document.createElement("p");
+                body.className = "fact-body";
+                body.textContent = fact.body;
+
+                // Ajouter le titre et le corps au contenu
+                factContent.appendChild(title);
+                factContent.appendChild(body);
+
+                // Créer la div pour le pied de page
+                const factFooter = document.createElement("div");
+                factFooter.className = "fact-footer";
+
+                // Créer la div pour les tags
+                const tagsContainer = document.createElement("div");
+                tagsContainer.className = "tags";
+
+                fact.tags.forEach(tagText => {
+                    const tag = document.createElement("span");
+                    tag.className = "tag";
+                    tag.textContent = tagText;
+                    tagsContainer.appendChild(tag);
+                });
+
+                // Ajouter les tags au pied de page
+                factFooter.appendChild(tagsContainer);
+
+                // Ajouter les éléments au container principal de l'article
+                article.appendChild(factContent);
+                article.appendChild(factFooter);
+
+                // Ajouter l'article au conteneur principal
+                factsContainer.appendChild(article);
+            });
+        });
+    </script>
+</body>
+</html>

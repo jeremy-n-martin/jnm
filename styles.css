@@ -1,51 +1,11 @@
-/* Body Styling */
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background-color: #ffe6f2; /* Soft pastel pink background */
-}
-
-.image {
-    width: 200px; /* Ajuste la taille selon tes besoins */
-    border-radius: 8px; /* Coins arrondis */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Ombre légère avec flou */
-    transition: all 0.3s ease; /* Transition fluide sur les changements */
-    margin: 0 auto; /* Centre l'image horizontalement */
-    display: flex;
-    justify-content: center; /* Centre horizontalement */
-}
-
-.image:hover {
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Ombre plus forte au survol */
-    transform: scale(1.05); /* Léger zoom au survol */
-}
-
-
-/* Container Styling */
-.container {
-    background-color: white;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    max-width: 800px;
-    width: 100%;
-    border-radius: 8px;
-    margin: 0 auto; /* Center the container horizontally */
-}
-
-/* Header Styling */
+/* ======================================== */
+/* ==============  HEADER ================= */
+/* ======================================== */
 header {
     text-align: center;
-    margin-bottom: 20px; /* Spacing between header and content */
+    margin-bottom: 5px; /* Spacing between header and content */
 }
-
-header h1 {
-    color: #f1dcdc; /* Ensure the title is visible */
-}
-
-/* Fixed Navigation */
-.fixed-nav {
+.fixed-nav { /* Fixed Navigation Styling */
     position: fixed;
     top: 0;
     left: 50%;
@@ -55,136 +15,164 @@ header h1 {
     padding: 10px 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     width: 100%;
-    max-width: 800px;
+    max-width: 900px;
     border-bottom: 1px solid #ccc;
 }
-
 .fixed-nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
     text-align: center;
 }
-
 .fixed-nav ul li {
     display: inline-block;
     margin: 0 15px;
 }
-
 .fixed-nav ul li a {
     text-decoration: none;
-    color: #007BFF;
+    color: transparent;
+    text-shadow: 0 0 0 pink;
     font-weight: bold;
     transition: color 0.3s ease;
 }
-
 .fixed-nav ul li a:hover {
     color: #0056b3;
 }
-
-/* Main Content Styling */
+.tooltip { /* Style de base pour les liens avec tooltips */
+    position: relative; /* Nécessaire pour positionner le tooltip */
+    display: inline-block;
+}
+.tooltip::after { /* Style du tooltip */
+    content: attr(data-tooltip); /* Affiche le texte du tooltip */
+    position: absolute;
+    top: 100%; /* Positionne le tooltip au-dessus de l'élément */
+    left: 50%;
+    transform: translateX(-50%); /* Centre le tooltip horizontalement */
+    background-color: #333; /* Couleur de fond du tooltip */
+    color: #fff;
+    padding: 5px 10px; /* Marge intérieure du tooltip */
+    border-radius: 4px;
+    opacity: 0;
+    pointer-events: none;
+    white-space: nowrap; /* Empêche le texte de se casser sur plusieurs lignes */
+    font-size: 12px;
+    transition: opacity 0.3s ease;
+    z-index: 1000; /* S'assure que le tooltip est au-dessus des autres éléments */
+    margin-top: 10px; /* Ajoute un espace entre l'élément et le tooltip */
+}
+.tooltip:hover::after { /* Affichage du tooltip au survol */
+    opacity: 1;
+}
+/* ======================================== */
+/* ============== MAIN CONTENT ============ */
+/* ======================================== */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffe6f2; /* Soft pastel pink background */
+}
 main {
     padding: 1rem 2rem;
 }
-
-section {
-    margin-bottom: 2rem;
+.containermain {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    width: 100%;
+    border-radius: 8px;
+    margin: 0 auto; /* Center the container horizontally */
 }
-
-section h2 {
-    color: #333;
-    font-size: 1.5em;
-}
-
-section p {
-    color: #666;
-}
-
-h1, h2 {
-    color: #f1dcdc;
-}
-
-h3, p, a {
-    color: #2e2e2e; /* Soft pastel link color */
-    text-decoration: none;
-}
-
-p a:hover {
-    text-decoration: underline;
-}
-
-/* Tag Cloud Styling */
-#tag-cloud {
+/* ======================================== */
+/* ============== IMAGES ================== */
+/* ======================================== */
+.imagejm {
+    width: 200px; /* Ajuste la taille selon tes besoins */
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Ombre légère avec flou */
+    transition: all 0.3s ease; /* Transition fluide sur les changements */
+    margin: 0 auto; /* Centre l'image horizontalement */
     display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
-    margin: 20px 0;
+    justify-content: center; /* Centre horizontalement */
+}
+.imagejm:hover {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Ombre plus forte au survol */
+    transform: scale(1.05); /* Léger zoom au survol */
 }
 
-#tag-cloud a {
-    text-decoration: none;
-    padding: 10px 15px;
-    border-radius: 25px;
-    font-size: 1rem;
-    color: white;
-    background-color: #007BFF;
-    transition: all 0.3s ease;
+
+
+/* ======================================== */
+/* ============== FACT CARDS ============== */
+/* ======================================== */
+.facts-section {
+    display: flex;  /* Flex container */
+    flex-wrap: wrap; /* Permet de passer à la ligne si l'espace est insuffisant */
+    gap: 20px; /* Espace entre les cartes */
 }
 
-#tag-cloud a:hover {
-    background-color: #0056b3;
-    transform: scale(1.1);
+.fact-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-left: 4px solid #ff69b4;
+    border-radius: 8px;
+    padding: 15px; /* Marge intérieure */
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
 }
 
-#tag-cloud a:nth-child(1) {
-    font-size: 1.5rem;
-    background-color: #ff8c00;
+.fact-title {
+    font-weight: bold;
+    margin: 0;
+    position: absolute;
+    top: 15px;
+    left: 15px;
 }
 
-#tag-cloud a:nth-child(2) {
-    font-size: 1.3rem;
-    background-color: #ff6347;
-}
-
-#tag-cloud a:nth-child(3) {
-    font-size: 1.4rem;
-    background-color: #32cd32;
-}
-
-#tag-cloud a:nth-child(4) {
-    font-size: 1.2rem;
-    background-color: #4682b4;
-}
-
-#tag-cloud a:nth-child(5) {
-    font-size: 1.1rem;
-    background-color: #ba55d3;
-}
-
-#tag-cloud a:nth-child(6) {
-    font-size: 1.3rem;
-    background-color: #20b2aa;
-}
-
-#tag-cloud a:nth-child(7) {
-    font-size: 1.2rem;
-    background-color: #ff1493;
-}
-
-#tag-cloud a:nth-child(8) {
-    font-size: 1.5rem;
-    background-color: #1e90ff;
-}
-
-#tag-cloud a:nth-child(9) {
-    font-size: 1.2rem;
-    background-color: #ffa500;
-}
-
-/* Footer Styling */
-footer {
-    padding: 10px;
+.fact-body {
+    margin-top: 40px;
     text-align: center;
-    background-color: #f1f1f1;
+    font-size: 16px;
+}
+
+.fact-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.tags {
+    display: flex;
+    gap: 10px;
+}
+
+.tag {
+    background-color: #ffb6c1;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 12px;
+}
+
+
+/* ======================================== */
+/* ============== MEDIA QUERIES =========== */
+/* ======================================== */
+@media (min-width: 300px) {
+    .fact-card {
+        width: calc(90% - 20px);
+    }
+}
+
+@media (min-width: 600px) {
+    .fact-card {
+        width: calc(44.5% - 20px);
+    }
+}
+
+@media (min-width: 900px) {
+    .fact-card {
+        width: calc(29.95% - 20px);
+    }
 }
