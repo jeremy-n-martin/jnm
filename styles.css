@@ -173,6 +173,6 @@ main {
 
 @media (min-width: 900px) {
     .fact-card {
-        width: calc(29.95% - 20px);
+        width: calc(29.9% - 20px);
     }
 }
