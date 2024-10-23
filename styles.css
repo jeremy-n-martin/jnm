@@ -82,6 +82,17 @@ main {
     border-radius: 8px;
     margin: 0 auto; /* Center the container horizontally */
 }
+
+
+.citation{
+    font-style: italic;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 20px;
+    color: #de9c45;
+}
+
+
 /* ======================================== */
 /* ============== IMAGES ================== */
 /* ======================================== */
@@ -90,7 +101,7 @@ main {
     border-radius: 8px; /* Coins arrondis */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Ombre légère avec flou */
     transition: all 0.3s ease; /* Transition fluide sur les changements */
-    margin: 0 auto; /* Centre l'image horizontalement */
+    margin: 20px auto; /* Centre l'image horizontalement */
     display: flex;
     justify-content: center; /* Centre horizontalement */
 }
